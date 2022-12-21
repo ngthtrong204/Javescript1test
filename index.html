@@ -59,14 +59,48 @@
 
 
         <h2>Bài 3: Quy đổi tiền</h2>
+        <div class="form-group">
+            <input type="number" id="SoTienUSD" placeholder="USB">
+
+            <button onclick="bai3()" class="btn btn-primary mx-2">Quy đổi</button>
+            <input type="number" id="kq3" placeholder="VND">
 
 
+        </div>
 
+        <hr>
         <h2>Bài 4: Tính diện tích, chu vi hình chữ nhật</h2>
+        <div class="form-group">
+            <input type="number" id="ChieuDai">
+            <label for="SoThuc4">Nhập chiều dài</label>
+            <br>
+            <input type="number" id="ChieuRong">
+            <label for="SoThuc5">Nhập chiều rộng</label>
+            <br>
+            <button onclick="bai4()" class="btn btn-primary">Get</button>
+            <br>
+            <span class="font-weight-bold">Chu vi hình tứ giác trên là:</span>
+            <p class="font-weight-normal d-inline" id="kq41"></p>
+            <br>
+            <span class="font-weight-bold">Diện tích hình tứ giác trên là:</span>
+            <p class="font-weight-normal d-inline" id="kq42"></p>
+        </div>
+        <hr>
 
 
         <h2>Bài 5: Tinh tổng hai ký số</h2>
 
+
+        <div class="form-group">
+            <input type="number" id="SoHang">
+            <label for="SoHang">Nhập số có hai chữ số</label>
+            <br>
+            <button onclick="bai5()" class="btn btn-primary">Tính tổng hai hạng tử</button>
+            <br>
+            <p class="font-weight-bold mt-3 d-inline">Kêt quả:
+            <p class="font-weight-normal d-inline" id="kq5"></p>
+            </p>
+        </div>
 
 
     </div>
