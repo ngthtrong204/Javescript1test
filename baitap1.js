@@ -1,4 +1,4 @@
-console.log("       Bài tập 1");
+
 
     //INPUT:
     //Số ngày làm của nhận nhận viên
@@ -12,11 +12,15 @@ console.log("       Bài tập 1");
     //OUTPUT:
     //Số tiền lương của nhân viên
 
-const LuongMotNgay = 100000;
-let TongLuong;
-let SoNgayLamViec = 30;
+function bai1(){
+    let LuongMotNgay = document.getElementById('LuongMotNgay');
+    let SoNgayLamViec = document.getElementById('SoNgayLamViec')
 
-TongLuong = SoNgayLamViec*LuongMotNgay;
-console.log("Tổng số tiền lương của nhân viên trong ",SoNgayLamViec," ngày là: ", TongLuong);
+    let TongLuong;
+    TongLuong = LuongMotNgay.value*SoNgayLamViec.value
 
-console.log("");
+    let kq1 = document.getElementById('kq1')
+    kq1.innerHTML=TongLuong +" (ngàn đồng)";
+}
+
+
